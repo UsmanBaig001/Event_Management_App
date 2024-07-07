@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "454030971296",
+    "project_id": "eventnextdoor-95fda",
+    "storage_bucket": "eventnextdoor-95fda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454030971296:android:442011d0056da4e776d4c5",
+        "android_client_info": {
+          "package_name": "com.plinki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454030971296-t4336f8fevmrh3lhkq3lpf1n033utt2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXFf63BV3hrxFoLxl7pNQxKtwuWG_Ck9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454030971296-t4336f8fevmrh3lhkq3lpf1n033utt2m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "454030971296-f8b7mudgmusn421ru2cppn2a1ejtslkb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.plinki"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

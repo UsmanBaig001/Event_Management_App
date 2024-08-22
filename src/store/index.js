@@ -9,7 +9,7 @@ const persistConfig = {
     key: 'root',
     storage: AsyncStorage,
     timeout: null,
-    // blacklist:[  "currentLocation" ]
+    blacklist:[  "currentLocation" ]
 };
 
 const persistedReducer = persistReducer(persistConfig, reducer);

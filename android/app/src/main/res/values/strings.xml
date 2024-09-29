@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Event_Next_Door</string>
+    <string name="app_name">Nearby_Event_Locator</string>
 
 <string name="facebook_app_id">638838921252766</string>
 <string name="fb_login_protocol_scheme">fb638838921252766</string>

@@ -1,4 +1,3 @@
-// export const BASE_URL = "https://end-server.herokuapp.com/"
 export const BASE_URL = 'https://event-management-server-chi.vercel.app/';
 
 export default {

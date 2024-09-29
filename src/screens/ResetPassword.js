@@ -31,10 +31,10 @@ class ResetPassword extends Component {
 
   forgotPassword = async () => {
     if (!this.state.password) {
-      alert('Password enter password');
+      alert(LAN.EN.RESET_PASSWORD.ALERTS.VALIDATIONS.INVALID_PASSWORD);
       return;
     } else if (this.state.password !== this.state.confirmPassword) {
-      alert('Password and confirm should be same');
+      alert(LAN.EN.RESET_PASSWORD.ALERTS.VALIDATIONS.PASSWORDS_NOT_MATCH);
       return;
     } else {
       this.setState({loading: true});
@@ -43,7 +43,7 @@ class ResetPassword extends Component {
         password: this.state.password,
       });
       if (res.success) {
-        alert('Password changed successfully');
+        alert(LAN.EN.RESET_PASSWORD.ALERTS.PASSWORD_CHANGED);
         this.props.navigation.navigate('Login');
       } else {
         alert(res?.message);
@@ -97,7 +97,7 @@ class ResetPassword extends Component {
             <LatoText
               fontSize={15}
               alignSelf={'center'}
-              text={'Set New Password'}
+              text={LAN.EN.RESET_PASSWORD.TITLE}
               textAlign="center"
               marginTop={30}
             />
@@ -106,7 +106,7 @@ class ResetPassword extends Component {
               color={colors.greyText}
               alignSelf={'center'}
               width={'80%'}
-              text={'Set new password for account'}
+              text={LAN.EN.RESET_PASSWORD.HEADING}
               textAlign="center"
               marginTop={20}
             />
@@ -117,7 +117,7 @@ class ResetPassword extends Component {
                 value={this.state.password}
                 onChangeText={e => this.setState({password: e.trim()})}
                 source={PASSWORD_ICON}
-                placeholder="Password"
+                placeholder={LAN.EN.RESET_PASSWORD.FIELDS.PASSWORD}
                 marginTop={15}
               />
               <Input
@@ -125,7 +125,7 @@ class ResetPassword extends Component {
                 value={this.state.confirmPassword}
                 onChangeText={e => this.setState({confirmPassword: e.trim()})}
                 source={PASSWORD_ICON}
-                placeholder="Confirm Password"
+                placeholder={LAN.EN.RESET_PASSWORD.FIELDS.CONFIRM_PASSWORD}
                 marginTop={15}
               />
             </View>
@@ -140,16 +140,19 @@ class ResetPassword extends Component {
               <Button
                 onPress={() => this.forgotPassword()}
                 width="90%"
-                text={'Done'}
+                text={LAN.EN.RESET_PASSWORD.DONE}
               />
             </View>
           </View>
 
           <Text style={{textAlign: 'center', marginTop: 50, marginBottom: 20}}>
-            <LatoText text={'Go back to '} color={colors.white} />
+            <LatoText
+              text={LAN.EN.RESET_PASSWORD.SUB_TITLE}
+              color={colors.white}
+            />
             <LatoText
               onPress={() => this.props.navigation.navigate('Login')}
-              text={'Sign In'}
+              text={LAN.EN.RESET_PASSWORD.SIGN_IN}
               color={colors.orange}
               fontSize={16}
               fontName="Poppins-Bold"

@@ -89,6 +89,32 @@ export const LAN = {
         SENT_AGAIN: 'Code sent again',
       },
     },
+
+    RESET_PASSWORD: {
+      TITLE: 'Set New Password',
+      HEADING: 'Set new password for account',
+      SUB_TITLE: 'Go back to ',
+      SIGN_IN: 'Sign In',
+      DONE: 'Done	',
+      TEXTS: {
+        NEW_PASS: 'Set New Password',
+      },
+      ALERTS: {
+        VALIDATIONS: {
+          INVALID_PASSWORD: 'Please enter password',
+          PASSWORDS_NOT_MATCH: 'Passwords do not match',
+        },
+        ERRORS: {
+          RESET_PASSWORD:
+            'An error occurred during password reset. Please try again.',
+        },
+        PASSWORD_CHANGED: 'Password changed successfully',
+      },
+      FIELDS: {
+        PASSWORD: 'Password',
+        CONFIRM_PASSWORD: 'Re Password',
+      },
+    },
   },
 };
 

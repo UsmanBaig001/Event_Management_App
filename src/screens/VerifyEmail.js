@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react';
+import React, {useState} from 'react';
 import {
   Image,
   KeyboardAvoidingView,
@@ -9,11 +9,10 @@ import {
   View,
 } from 'react-native';
 import Button from '../components/Button';
-import Input from '../components/Input';
 import LatoText from '../components/LatoText';
 import {font, hp, sHeight, wp} from '../services/helper';
 import colors from '../theme/colors';
-import {EMAIL_ICON, PASSWORD_ICON, SPLASH_BG} from '../theme/images';
+import {SPLASH_BG} from '../theme/images';
 import {
   CodeField,
   Cursor,
@@ -121,17 +120,14 @@ const VerifyEmail = props => {
           />
 
           <View style={{alignItems: 'center', width: '100%'}}>
-            {/* <Input source={EMAIL_ICON} placeholder="Email" marginTop={40} /> */}
             <CodeField
               ref={ref}
               {...props}
               props={props1}
-              // Use `caretHidden={false}` when users can't paste a text value, because context menu doesn't appear
               value={value}
               onChangeText={setValue}
               cellCount={CELL_COUNT}
               rootStyle={styles.codeFieldRoot}
-              // keyboardType="number-pad"
               textContentType="oneTimeCode"
               renderCell={({index, symbol, isFocused}) => (
                 <Text
@@ -156,7 +152,6 @@ const VerifyEmail = props => {
         </View>
 
         <Text style={{textAlign: 'center', marginTop: 50, marginBottom: 20}}>
-          {/* <LatoText text={"Go back to "} color={colors.white} /> */}
           <LatoText
             onPress={() => resendCode()}
             text={'Resend?'}

@@ -2,15 +2,10 @@ import React, {useState} from 'react';
 import {Image, StyleSheet, TouchableOpacity, View} from 'react-native';
 import {font} from '../services/helper';
 import colors from '../theme/colors';
-import {
-  BOTTOM_EVENTS_ICON,
-  BOTTOM_HEART_ICON,
-  BOTTOM_MAP_ICON,
-  BOTTOM_USER_ICON,
-} from '../theme/images';
+import {BOTTOM_EVENTS_ICON, BOTTOM_USER_ICON} from '../theme/images';
 import LatoText from './LatoText';
 
-export default function OrganizerCustomTab({state, descriptors, navigation}) {
+export default function OrganizerCustomTab({state, navigation}) {
   const active = state.index;
   const [activeTab, setActiveTab] = useState(active ? active : 1);
 

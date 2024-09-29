@@ -126,7 +126,6 @@ const VerifyOtp = props => {
               onChangeText={setValue}
               cellCount={CELL_COUNT}
               rootStyle={styles.codeFieldRoot}
-              // keyboardType="number-pad"
               textContentType="oneTimeCode"
               renderCell={({index, symbol, isFocused}) => (
                 <Text
@@ -155,7 +154,6 @@ const VerifyOtp = props => {
         </View>
 
         <Text style={{textAlign: 'center', marginTop: 50, marginBottom: 20}}>
-          {/* <LatoText text={"Go back to "} color={colors.white} /> */}
           <LatoText
             onPress={() => resendCode()}
             text={LAN.EN.OTP.RESEND}

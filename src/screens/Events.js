@@ -50,7 +50,7 @@ class Events extends Component {
               <FlatList
                 contentContainerStyle={{paddingBottom: 35}}
                 data={this.state.allEvents}
-                keyExtractor={(item) => item.id.toString()}
+                keyExtractor={item => item.id.toString()}
                 renderItem={({item, index}) => (
                   <EventCard
                     onPress={() =>

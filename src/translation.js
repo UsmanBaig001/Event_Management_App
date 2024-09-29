@@ -116,6 +116,53 @@ export const LAN = {
       },
     },
   },
+
+  RUS: {
+    APP_NAME: 'Ближайшие мероприятия',
+    LOGIN: {
+      HEADING: 'Пожалуйста, введите свой email и пароль, чтобы продолжить',
+      GREETING: 'Добро пожаловать обратно',
+      SUB_TITLE: 'Нет учетной записи. ',
+      REMEMBER: 'Запомнить меня',
+      FORGET_PASS: 'Забыли пароль?',
+      SIGN_IN: 'Войти',
+      SIGN_UP: 'Зарегистрироваться',
+      ALERTS: {
+        VALIDATIONS: {
+          INVALID_EMAIL: 'Пожалуйста, введите email',
+          INVALID_PASSWORD: 'Пожалуйста, введите пароль',
+        },
+      },
+      FIELDS: {
+        EMAIL: 'Email',
+        PASSWORD: 'Пароль',
+      },
+    },
+  },
+
+  French: {
+    APP_NAME: 'Localiser des Événements Nearby',
+    LOGIN: {
+      HEADING:
+        'Veuillez entrer votre adresse email et mot de passe pour continuer',
+      GREETING: 'Bienvenue de nouveau',
+      SUB_TITLE: 'Pas encore de compte? ',
+      REMEMBER: 'Souviens-toi de moi',
+      FORGET_PASS: 'Mot de passe oublié?',
+      SIGN_IN: 'Se connecter',
+      SIGN_UP: "S'inscrire",
+      ALERTS: {
+        VALIDATIONS: {
+          INVALID_EMAIL: 'Veuillez entrer une adresse email valide',
+          INVALID_PASSWORD: 'Veuillez entrer un mot de passe valide',
+        },
+      },
+      FIELDS: {
+        EMAIL: 'Email',
+        PASSWORD: 'Mot de passe',
+      },
+    },
+  },
 };
 
 const EXTRA = {

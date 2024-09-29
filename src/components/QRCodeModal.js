@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Modal, TouchableOpacity, View} from 'react-native';
 import {sHeight} from '../services/helper';
 import colors from '../theme/colors';

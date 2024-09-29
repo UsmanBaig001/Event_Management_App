@@ -1,6 +1,5 @@
 import React from 'react';
 import {Text} from 'react-native';
-import {wp} from '../services/helper';
 
 export default ({
   lines,

@@ -78,8 +78,6 @@ class CreateEvent extends Component {
 
     let location = await Location.getLatestLocation();
 
-    // console.log(JSON.stringify(location), 'location>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
-
     const region = {
       latitude: location.latitude,
       longitude: location.longitude,
@@ -91,11 +89,8 @@ class CreateEvent extends Component {
       loading: false,
       error: null,
     });
-
-    // this.setLongLat()
   };
   pickImage = async () => {
-    // No permissions request is necessary for launching the image library
     const result = await launchImageLibrary({
       quality: 1,
       mediaType: 'photo',
